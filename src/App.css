@@ -1,38 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  color: var(--White);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--Dark-Blue);
+  color: var(--Light-Grey);
+  font-size: 0.8rem;
+}
+
+.rating-state {
+  background-color: var(--Dark-Blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10rem auto;
+  padding: 2rem;
+  width: 330px;
+  height: 385px;
+  color: var(--White);
+}
+
+.thank-state {
+  background-color: var(--Dark-Blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  width: 330px;
+  height: 385px;
+  color: var(--White);
+  margin: 10rem auto;
+}
+
+.rating-state img {
+  background-color: var(--Medium-Grey);
+  padding: 0.6rem;
+  border-radius: 50%;
+}
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: var(--Medium-Grey);
+  line-height: 1.3rem;
+}
+
+.numbers {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.numbers span {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--Medium-Grey);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.numbers span:hover {
+  background-color: var(--Orange);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background-color: var(--Orange);
+  border: none;
+  border-radius: 20px;
+  color: var(--White);
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  width: 100%;
+  margin: 0 auto;
+  padding: 13px 20px;
+}
+
+button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  opacity: 0.8;
+}
+
+.thank-state .p_1 {
+  background-color: var(--Medium-Grey);
+  color: var(--Orange);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.thank-state .p_2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.thank-state .p_3 {
+  text-align: center;
+  color: var(--Light-Grey);
+}
+
+.close-btn {
+  height: 1.2rem;
+  width: 1.2rem;
+  padding: 0.7rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--White);
+  background-color: var(--Light-Grey);
+  cursor: pointer;
+  margin: 0 0 0 auto;
 }

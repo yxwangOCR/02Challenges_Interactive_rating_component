@@ -103,7 +103,7 @@ const RatingState = ({ rating, setRating, setShowThanks }) => {
           5
         </span>
       </div>
-      <button type='sublit' className='submit-btn' onClick={handleSubmit}>
+      <button type='submit' className='submit-btn' onClick={handleSubmit}>
         SUBMIT
       </button>
     </Card>

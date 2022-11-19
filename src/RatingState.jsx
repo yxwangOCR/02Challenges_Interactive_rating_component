@@ -1,23 +1,111 @@
-import star from "./images/icon-star.svg";
+import Star from "./images/icon-star.svg";
 import Card from "./Card";
 import "./RatingState.css";
-const RatingState = () => {
+import { useState } from "react";
+
+const RatingState = ({ rating, setRating, showThanks, setShowThanks }) => {
+  const [activeNumber, setActiveNumber] = useState({
+    one: false,
+    two: false,
+    three: false,
+    four: false,
+    five: false,
+  });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!rating) return;
+    setShowThanks(true);
+    setRating(rating);
+  };
   return (
     <Card>
-      <img src={star} alt='icon' className="star-image"/>
+      <img src={Star} alt='icon' className='star-image' />
       <p className='title'>How did we do?</p>
       <p className='description'>
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
       <div className='numbers'>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
+        <span
+          className={activeNumber.one ? ".numbers-item active" : "numbers-item"}
+          onClick={() => {
+            setActiveNumber({
+              one: true,
+              two: false,
+              three: false,
+              four: false,
+              five: false,
+            });
+            setRating(1);
+          }}>
+          1
+        </span>
+        <span
+          className={activeNumber.two ? ".numbers-item active" : "numbers-item"}
+          onClick={() => {
+            setActiveNumber({
+              one: false,
+              two: true,
+              three: false,
+              four: false,
+              five: false,
+            });
+            setRating(2);
+          }}>
+          2
+        </span>
+        <span
+          className={
+            activeNumber.three ? ".numbers-item active" : "numbers-item"
+          }
+          onClick={() => {
+            setActiveNumber({
+              one: false,
+              two: false,
+              three: true,
+              four: false,
+              five: false,
+            });
+            setRating(3);
+          }}>
+          3
+        </span>
+        <span
+          className={
+            activeNumber.four ? ".numbers-item active" : "numbers-item"
+          }
+          onClick={() => {
+            setActiveNumber({
+              one: false,
+              two: false,
+              three: false,
+              four: true,
+              five: false,
+            });
+            setRating(4);
+          }}>
+          4
+        </span>
+        <span
+          className={
+            activeNumber.five ? ".numbers-item active" : "numbers-item"
+          }
+          onClick={() => {
+            setActiveNumber({
+              one: false,
+              two: false,
+              three: false,
+              four: false,
+              five: true,
+            });
+            setRating(5);
+          }}>
+          5
+        </span>
       </div>
-      <button type='sublit' className="submit-btn">SUBMIT</button>
+      <button type='sublit' className='submit-btn' onClick={handleSubmit}>
+        SUBMIT
+      </button>
     </Card>
   );
 };

@@ -1,6 +1,6 @@
 .star-image {
   background-color: var(--Medium-Grey);
-  padding: 0.6rem;
+  padding: 0.5rem;
   border-radius: 50%;
 }
 .title {
@@ -18,22 +18,28 @@
   display: flex;
   justify-content: space-between;
 }
-.numbers span {
-  width: 3rem;
-  height: 3rem;
+.numbers-item {
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-color: var(--Medium-Grey);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.numbers span:hover {
+.numbers-item:hover {
   background-color: var(--Orange);
   cursor: pointer;
 }
-.numbers span.active {
-  background-color: var(--Light-Grey);
-  color: var(--Very-Dark-Blue);
+.active {
+  background-color: var(--Orange);
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .submit-btn {
   background-color: var(--Orange);
@@ -47,14 +53,8 @@
   margin: 0 auto;
   padding: 13px 20px;
 }
-
 .submit-btn:hover {
   background-color: var(--White);
   color: var(--Orange);
   opacity: 0.8;
-}
-.submit-btn:active {
-  background-color: var(--Medium-Grey);
-  color: var(--White);
-  opacity: 0.6;
 }

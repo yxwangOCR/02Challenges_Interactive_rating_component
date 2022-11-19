@@ -8,7 +8,7 @@ function App() {
     <div className='App'>
       <RatingState />
       <ThanksState />
-      <div class='footer'>
+      <div className='footer'>
         Challenge by Frontend Mentor. Coded by Yixuan WANG.
       </div>
     </div>

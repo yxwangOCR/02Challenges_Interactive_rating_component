@@ -17,136 +17,31 @@
 body {
   background-color: var(--Very-Dark-Blue);
   color: var(--White);
-}
-
-.App {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 1rem;
-  background-color: var(--Dark-Blue);
-  color: var(--Light-Grey);
-  font-size: 0.8rem;
-}
 
-.rating-state {
+.card {
   background-color: var(--Dark-Blue);
-  border-radius: 10px;
+  border-radius: 1.25rem;
+  width: 330px;
+  height: 385px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 10rem auto;
-  padding: 2rem;
-  width: 330px;
-  height: 385px;
-  color: var(--White);
-}
-
-.thank-state {
-  background-color: var(--Dark-Blue);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  width: 330px;
-  height: 385px;
-  color: var(--White);
-  margin: 10rem auto;
-}
-
-.rating-state img {
-  background-color: var(--Medium-Grey);
-  padding: 0.6rem;
-  border-radius: 50%;
-}
-.title {
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.description {
-  font-size: 0.8rem;
-  color: var(--Medium-Grey);
-  line-height: 1.3rem;
-}
-
-.numbers {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.numbers span {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: var(--Medium-Grey);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.numbers span:hover {
-  background-color: var(--Orange);
-  cursor: pointer;
-}
-
-button {
-  background-color: var(--Orange);
-  border: none;
-  border-radius: 20px;
-  color: var(--White);
-  font-size: 1rem;
-  font-weight: 400;
-  cursor: pointer;
-  width: 100%;
   margin: 0 auto;
-  padding: 13px 20px;
 }
 
-button:hover {
-  background-color: var(--White);
-  color: var(--Orange);
-  opacity: 0.8;
-}
-
-.thank-state .p_1 {
-  background-color: var(--Medium-Grey);
-  color: var(--Orange);
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-
-.thank-state .p_2 {
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-.thank-state .p_3 {
+.footer {
+  width: 100%;
   text-align: center;
+  padding: 1rem;
   color: var(--Light-Grey);
-}
-
-.close-btn {
-  height: 1.2rem;
-  width: 1.2rem;
-  padding: 0.7rem;
-  border-radius: 50%;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--White);
-  background-color: var(--Light-Grey);
-  cursor: pointer;
-  margin: 0 0 0 auto;
+  font-size: 0.9rem;
 }

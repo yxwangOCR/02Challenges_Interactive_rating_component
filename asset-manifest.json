@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/02Challenges_Interactive_rating_component/static/css/main.78ada0b7.css",
+    "main.js": "/02Challenges_Interactive_rating_component/static/js/main.a94a71cc.js",
+    "static/media/illustration-thank-you.svg": "/02Challenges_Interactive_rating_component/static/media/illustration-thank-you.d74a66b551b99ae110b5362ed63106bf.svg",
+    "static/media/Penguin.svg": "/02Challenges_Interactive_rating_component/static/media/Penguin.1d7978b9ed3982a5307e2da6ec714481.svg",
+    "index.html": "/02Challenges_Interactive_rating_component/index.html",
+    "static/media/icon-star.svg": "/02Challenges_Interactive_rating_component/static/media/icon-star.12766a8d207af861a70f92500634c8be.svg",
+    "main.78ada0b7.css.map": "/02Challenges_Interactive_rating_component/static/css/main.78ada0b7.css.map",
+    "main.a94a71cc.js.map": "/02Challenges_Interactive_rating_component/static/js/main.a94a71cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78ada0b7.css",
+    "static/js/main.a94a71cc.js"
+  ]
+}

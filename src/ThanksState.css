@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .p_1 {
@@ -51,4 +52,10 @@ h1 {
   font-weight: 700;
   margin: 0;
   text-align: center;
+}
+
+.penguin{
+    width: 9em;
+    height: 9rem;
+    margin-top: 6rem;
 }

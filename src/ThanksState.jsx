@@ -1,4 +1,5 @@
 import Thanks from "./images/illustration-thank-you.svg";
+import Penguin from "./images/Penguin.svg";
 import Card from "./Card";
 import "./ThanksState.css";
 import { useState } from "react";
@@ -22,8 +23,14 @@ const ThanksState = ({ rating }) => {
       </div>
     </Card>
   ) : (
-    <h1>See you soon!</h1>
+    <Card>
+      <div className='thanks-content'>
+        <h1>See you soon!</h1>
+        <img src={Penguin} alt='thank-you-illustration' className="penguin"/>
+      </div>
+    </Card>
   );
 };
 
 export default ThanksState;
+

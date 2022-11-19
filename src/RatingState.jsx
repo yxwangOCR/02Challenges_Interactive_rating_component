@@ -3,7 +3,7 @@ import Card from "./Card";
 import "./RatingState.css";
 import { useState } from "react";
 
-const RatingState = ({ rating, setRating, showThanks, setShowThanks }) => {
+const RatingState = ({ rating, setRating, setShowThanks }) => {
   const [activeNumber, setActiveNumber] = useState({
     one: false,
     two: false,

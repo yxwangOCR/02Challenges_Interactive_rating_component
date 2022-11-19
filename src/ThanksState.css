@@ -45,3 +45,10 @@
   background-color: var(--Orange);
   color: var(--White);
 }
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}

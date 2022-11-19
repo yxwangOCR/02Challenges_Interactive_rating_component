@@ -1,11 +1,14 @@
 import Thanks from "./images/illustration-thank-you.svg";
 import Card from "./Card";
 import "./ThanksState.css";
+import { useState } from "react";
 
 const ThanksState = ({ rating }) => {
-  return (
+  const [show, setShow] = useState(true);
+
+  return show ? (
     <Card>
-      <span className='close-btn'>
+      <span className='close-btn' onClick={() => setShow(false)}>
         <i className='ri-close-line'></i>
       </span>
       <div className='thanks-content'>
@@ -18,6 +21,8 @@ const ThanksState = ({ rating }) => {
         </p>
       </div>
     </Card>
+  ) : (
+    <h1>See you soon!</h1>
   );
 };
 
